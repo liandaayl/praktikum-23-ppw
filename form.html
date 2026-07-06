@@ -13,82 +13,80 @@
 
 </head>
 <body style="text-align: center;">
-<fieldset style="display: inline-block; border: 2px solid black; padding: 10px;"> 
-<h5>FORMULIR PENDAFTARAN TIM</h5>
+    <fieldset style="display: inline-block; border: 2px solid black;"> 
+        <h5>FORMULIR PENDAFTARAN TIM</h5>
+        <center>
+            <form method="post">
+                <table>
+                    <tr>
+                        <td>Nama Tim</td>
+                        <td><input type="text" name="nt" placeholder="nama tim anda..."></td>
+                    </tr>
 
-<center>
-<form method="post">
-<table>
-    <tr>
-        <td>Nama Tim</td>
-        <td><input type="text" name="nt" placeholder="nama tim anda..."></td>
-    </tr>
+                    <tr>
+                        <td>Nama Penanggung Jawab</td>
+                        <td><input type="text" name="pj" placeholder="nama pj anda..."></td>
+                    </tr>
 
-    <tr>
-        <td>Nama Penanggung Jawab</td>
-        <td><input type="text" name="pj" placeholder="nama pj anda..."></td>
-    </tr>
+                    <tr>
+                        <td>No. WA</td>
+                        <td><input type="number" name="wa"></td>
+                    </tr>
 
-    <tr>
-        <td>No. WA</td>
-        <td><input type="number" name="wa"></td>
-    </tr>
+                    <tr>
+                        <td>E-mail</td>
+                        <td><input type="email" name="email"></td>
+                    </tr>
 
-    <tr>
-        <td>E-mail</td>
-        <td><input type="email" name="email"></td>
-    </tr>
+                    <tr>
+                        <td>Anggota Tim Cadangan</td>
+                        <td class="no-full">
+                            <input type="radio" name="tim cadangan" value="A1"> Ada
+                            <input type="radio" name="tim cadangan" value="A2"> Tidak Ada
+                        </td>
+                    </tr>
 
-    <tr>
-        <td>Anggota Tim Cadangan</td>
-        <td class="no-full">
-            <input type="radio" name="tim cadangan" value="A1"> Ada
-            <input type="radio" name="tim cadangan" value="A2"> Tidak Ada
-        </td>
-    </tr>
+                    <tr>
+                        <td>Logo Tim</td>
+                        <td><input type="file" name="foto" accept="image/*"></td>
+                    </tr>
 
-    <tr>
-        <td>Logo Tim</td>
-        <td><input type="file" name="foto" accept="image/*"></td>
-    </tr>
+                    <tr>
+                        <td>Metode Pembayaran</td>
+                        <td class="no-full">
+                            <input type="checkbox" name="p1"> Transfer Bank<br>
+                            <input type="checkbox" name="p2"> Cash<br>
+                            <input type="checkbox" name="p3"> Qris
+                        </td>
+                    </tr>
 
-    <tr>
-        <td>Metode Pembayaran</td>
-        <td class="no-full">
-            <input type="checkbox" name="p1"> Transfer Bank<br>
-            <input type="checkbox" name="p2"> Cash<br>
-            <input type="checkbox" name="p3"> Qris
-        </td>
-    </tr>
+                    <tr>
+                        <td>Tanggal Pembayaran</td>
+                        <td><input type="date" name="tanggalpembayaran"></td>
+                    </tr>
 
-    <tr>
-        <td>Tanggal Pembayaran</td>
-        <td><input type="date" name="tanggalpembayaran"></td>
-    </tr>
+                    <tr>
+                        <td>Event</td>
+                        <td>
+                            <select name="Event">
+                                <option disabled selected>-Pilih Event-</option>
+                                <option>Sixfeo Vol 3</option>
+                                <option>Sixfeo Vol 4</option>
+                                <option>Sixfeo Vol 5</option>
+                                <option>Sixfeo Vol 6</option>
+                            </select>
+                        </td>
+                    </tr>
 
-    <tr>
-        <td>Event</td>
-        <td>
-            <select name="Event">
-                <option disabled selected>-Pilih Event-</option>
-                <option>Sixfeo Vol 3</option>
-                <option>Sixfeo Vol 4</option>
-                <option>Sixfeo Vol 5</option>
-                <option>Sixfeo Vol 6</option>
-            </select>
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="2" class="center-btn">
-            <input type="reset" value="RESET">
-            <input type="submit" value="SUBMIT">
-        </td>
-    </tr>
-</table>
-</form>
-</center>
-</fieldset>
-
+                    <tr>
+                        <td colspan="2" class="center-btn">
+                            <input type="reset" value="RESET">
+                            <input type="submit" value="SUBMIT">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </center>
+    </fieldset>
 </body>
 </html>
